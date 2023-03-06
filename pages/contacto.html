@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../images/Estudio contable Sanchez y Asoc.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <nav id="barraDeNavegacion">
+        <div class="caja"><a href="../index.html" target="_blank">Inicio</a></div>
+        <div class="caja"><a href="./servicios.html" target="_blank">Servicios</a></div>
+        <div class="caja"><a href="./nosotros.html" target="_blank">Nosotros</a></div>
+        <div class="caja"><a href="#">Contacto</a></div>
+        <div class="caja"><a href="./publicaciones.html" target="_blank">Publicaciones</a></div>
+    </nav>
+    <div id="contacto">
+        <h1>Contactate con nosotros</h1>
+        <p>Muchas gracias por tu interés. Si tenés preguntas sobre nuestra compañía o servicios, por favor, completá el siguiente formulario:</p>
+    </div>
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>Datos del contacto</legend>
+            <br>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" required>
+            <br><br>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" required>
+            <br><br>
+
+            <label for="tel">Numero de telefono</label>
+            <input type="tel" id="tel" required>
+            <br><br>
+
+            <label for="mail">Correo electronico</label>
+            <input type="email" id="mail" required>
+            <br><br>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Servicio solicitado</legend>
+            <br>
+            <select name="service" id="service">
+                <option value="auditoria">AUDITORIA</option>
+                <option value="consultoria">CONSULTORIA</option>
+                <option value="impuestos">IMPUESTOS</option>
+            </select>
+            <br><br>
+
+            <p>Cliente habitual del Estudio:</p>
+            <label for="si">SI</label>
+            <input type="radio" name="cliente" value="si" id="si">
+
+            <label for="no">NO</label>
+            <input type="radio" name="cliente" value="no" id="no">
+            <br><br>
+
+            <p>Politica de privacidad:</p>
+
+            <label for="politica">He leído y acepto la política de privacidad</label>
+            <input type="checkbox" name="politica" id="politica">
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+            <br><br>
+
+            <label for="comentario">Deje su comentario</label>
+            <textarea name="comentario" id="comentario" cols="40" rows="3"></textarea>
+        </fieldset>
+
+
+    </form>
+    <br>
+    <footer id="pieDePagina">
+        <h2>Seguinos en nuestras redes sociales</h2>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="../images/Whatsapp.png" alt="logo_whap"
+                width="30px" height="30px"></a>
+        <a href="https://es-la.facebook.com/" target="_blank"><img src="../images/Facebook.png" alt="logo_face"
+                width="30px" height="30px"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../images/Instagram.png" alt="logo_insta"
+                width="30px" height="30px"></a>
+    </footer>
+
+</body>
+
+</html>
