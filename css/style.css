@@ -51,7 +51,6 @@ header #logo {
     align-items: center;
 }
 
-
 #barraDeNavegacion a {
     text-decoration: none;
     font-size: 20px;
@@ -100,6 +99,79 @@ a:active {
     padding: 5px;
 }
 
+/*GRID*/
+
+.publicacionesGrid {
+    margin-top: 75px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "not1 not2 not2 not4"
+        "not1 not3 not3 not4";
+    grid-template-columns: 250px auto auto 250px;
+    grid-template-rows: 50% 50%;
+}
+
+.publicacionesGrid1 {
+    grid-area: not1;
+    background-color: rgb(218, 255, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicacionesGrid1 div {
+    padding-bottom: 15px;
+}
+
+.publicacionesGrid2 {
+    grid-area: not2;
+    background-color: rgb(221, 249, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.publicacionesGridsBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.publicacionesGrid2 div {
+    padding-bottom: 5px;
+}
+
+.publicacionesGrid3 {
+    grid-area: not3;
+    background-color: rgb(242, 227, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.publicacionesGrid3 div {
+    padding-bottom: 5px;
+}
+
+.publicacionesGrid4 {
+    grid-area: not4;
+    background-color: rgb(255, 218, 242);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicacionesGrid4 div {
+    padding-bottom: 15px;
+}
+
+.publicacionesGrid .articulo {
+    color: black;
+    
+}
+
+
 /*footer*/
 #pieDePagina {
     font-size: 10px;
@@ -118,7 +190,7 @@ a:active {
 }
 
 .cajaFooter1 {
-     width: 30%;
+    width: 30%;
 }
 
 .cajaFooter2 {
@@ -133,7 +205,7 @@ a:active {
     color: white;
 }
 
-.cajaFooter3 a:hover{
+.cajaFooter3 a:hover {
     color: rgb(223, 62, 210);
 }
 
