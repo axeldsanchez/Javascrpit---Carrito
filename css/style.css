@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     scroll-behavior: smooth;
-}
+    }
 
 /*Body*/
 body {
@@ -13,17 +13,26 @@ body {
     color: rgb(47, 12, 129);
 }
 
+.cuerpoIndex h1 {
+    font-weight: 700;
+}
+
+.cuerpoIndex h2 {
+    font-weight: 600;
+}
+
+
 /*barra de navegación*/
 header {
     background-color: white;
     top: 0;
     width: 100%;
-    height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    border-bottom: 1.5px solid #60248E;
+    border-bottom: 2px solid #53b8e7;
+    box-shadow: 2px 2px 30px rgb(100, 206, 228);
 }
 
 header #logo {
@@ -33,32 +42,23 @@ header #logo {
 }
 
 #barraDeNavegacion {
-    width: 800px;
-    height: 100%;
-}
-
-#barraDeNavegacion ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center;
+    background-color: white !important;
 }
 
 #barraDeNavegacion li {
-    height: 100%;
-    display: flex;
-    align-items: center;
+    padding: 0px 20px;
 }
 
 #barraDeNavegacion a {
     text-decoration: none;
+    color: rgb(47, 12, 129);
+    ;
     font-size: 20px;
     font-weight: bold;
 }
 
 #barraDeNavegacion li:hover {
-    border-bottom: 3.5px solid rgb(223, 62, 210);
+    border-bottom: 3.5px solid rgb(69, 108, 144);
 }
 
 /*banner*/
@@ -67,9 +67,15 @@ header #logo {
     margin-top: 75px;
 }
 
+.banner img {
+    width: 100%;
+    height: 300px;
+}
+
 /*main*/
 p a {
     text-decoration: none;
+    color: rgb(47, 12, 129);
 }
 
 a:hover {
@@ -102,7 +108,10 @@ a:active {
 /*GRID*/
 
 .publicacionesGrid {
-    margin-top: 75px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     min-height: 100vh;
     display: grid;
     grid-template-areas:
@@ -110,16 +119,26 @@ a:active {
         "not1 not3 not3 not4";
     grid-template-columns: 300px auto auto 300px;
     grid-template-rows: 50% 50%;
+    gap: 1.6em;
+}
+
+.publicacionesGrid a {
+    text-decoration: none;
+}
+
+.cuerpoPublicacion {
+    background-color: white;
 }
 
 .publicacionesGrid1 {
     grid-area: not1;
-    background-color: rgb(218, 255, 235);
+    background-color: rgb(179, 225, 253);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 15px;
+    border-radius: 20px;
 }
 
 .publicacionesGrid1 div {
@@ -128,10 +147,11 @@ a:active {
 
 .publicacionesGrid2 {
     grid-area: not2;
-    background-color: rgb(221, 249, 255);
+    background-color: rgb(179, 225, 253);
     display: flex;
     flex-direction: column;
     padding: 0 15px;
+    border-radius: 20px;
 }
 
 .publicacionesGridsBox {
@@ -146,10 +166,11 @@ a:active {
 
 .publicacionesGrid3 {
     grid-area: not3;
-    background-color: rgb(242, 227, 255);
+    background-color: rgb(179, 225, 253);
     display: flex;
     flex-direction: column;
     padding: 0 15px;
+    border-radius: 20px;
 }
 
 .publicacionesGrid3 div {
@@ -158,12 +179,13 @@ a:active {
 
 .publicacionesGrid4 {
     grid-area: not4;
-    background-color: rgb(255, 218, 242);
+    background-color: rgb(179, 225, 253);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 15px;
+    border-radius: 20px;
 }
 
 .publicacionesGrid4 div {
@@ -172,7 +194,6 @@ a:active {
 
 .publicacionesGrid .articulo {
     color: black;
-
 }
 
 /*footer*/
@@ -190,6 +211,11 @@ a:active {
 
 #pieDePagina h2 {
     padding-bottom: 10px;
+    font-size: 15px;
+}
+
+#pieDePagina p {
+    margin-bottom: 0;
 }
 
 .cajaFooter1 {
@@ -231,25 +257,35 @@ a:active {
             "not3"
             "not4";
         grid-template-columns: auto;
-        grid-template-rows: 310px 260px 260px 310px;
+        grid-template-rows: 290px 290px 290px 290px;
     }
-    .publicacionesGrid img{
+
+    .publicacionesGrid p {
+        margin-bottom: 0px;
+    }
+
+
+    .publicacionesGrid div {
+        padding-bottom: 0px;
+    }
+
+    .publicacionesGrid img {
         height: 150px;
     }
 
     .publicacionesGrid2 {
         align-items: center;
     }
-    
+
     .publicacionesGrid3 {
         align-items: center;
     }
 
-    .publicacionesGrid h2{
+    .publicacionesGrid h2 {
         font-size: 16px;
     }
 
-    .publicacionesGrid p{
+    .publicacionesGrid p {
         font-size: 10px;
     }
 
@@ -259,16 +295,34 @@ a:active {
 
     #pieDePagina {
         align-items: flex-start;
+        height: 120px;
     }
 
-    #pieDePagina h2{
+    #pieDePagina h2 {
         font-size: 12px;
     }
-    #pieDePagina img{
-        width: 15px;
-        height: 15px;
+
+    .banner img {
+        width: 100%;
+        height: 200px;
     }
-    
+
+    .principal p {
+        font-size: 12px;
+    }
+
+    .principal h1 {
+        font-size: 20px;
+    }
+
+    .principal h2 {
+        font-size: 18px;
+    }
+
+    .cajaHome p{
+        padding: 0px;
+    }
+
 }
 
 
