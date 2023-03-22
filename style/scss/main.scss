@@ -1,11 +1,6 @@
-/*Selector universal*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    scroll-behavior: smooth;
-    }
+@import "../base/reset";
+@import "../layout/navbar";
+@import "../layout/footer";
 
 /*Body*/
 body {
@@ -21,45 +16,6 @@ body {
     font-weight: 600;
 }
 
-
-/*barra de navegación*/
-header {
-    background-color: white;
-    top: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    border-bottom: 2px solid #53b8e7;
-    box-shadow: 2px 2px 30px rgb(100, 206, 228);
-}
-
-header #logo {
-    display: flex;
-    text-align: center;
-    height: 76px;
-}
-
-#barraDeNavegacion {
-    background-color: white !important;
-}
-
-#barraDeNavegacion li {
-    padding: 0px 20px;
-}
-
-#barraDeNavegacion a {
-    text-decoration: none;
-    color: rgb(47, 12, 129);
-    ;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#barraDeNavegacion li:hover {
-    border-bottom: 3.5px solid rgb(69, 108, 144);
-}
 
 /*banner*/
 
@@ -196,54 +152,6 @@ a:active {
     color: black;
 }
 
-/*footer*/
-#pieDePagina {
-    font-size: 10px;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(69, 108, 144);
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-}
-
-#pieDePagina h2 {
-    padding-bottom: 10px;
-    font-size: 15px;
-}
-
-#pieDePagina p {
-    margin-bottom: 0;
-}
-
-.cajaFooter1 {
-    width: 30%;
-}
-
-.cajaFooter2 {
-    width: 30%;
-}
-
-.cajaFooter3 {
-    width: 30%;
-}
-
-.cajaFooter3 p a {
-    color: white;
-}
-
-.cajaFooter3 a:hover {
-    color: rgb(223, 62, 210);
-}
-
-.botonWhatsapp {
-    position: fixed;
-    right: 20px;
-    bottom: 10px;
-}
-
 /*GRID con Meadia queries*/
 
 @media screen and (max-width: 376px) {
@@ -319,7 +227,7 @@ a:active {
         font-size: 18px;
     }
 
-    .cajaHome p{
+    .cajaHome p {
         padding: 0px;
     }
 
