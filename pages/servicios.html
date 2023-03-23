@@ -7,65 +7,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="../images/Estudio contable Sanchez y Asoc.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <title>Servicios</title>
 </head>
 
-<body>
+<body class="cuerpo">
+    <header>
+        <a id="logo" href="../index.html"><img src="../images/LogoEstudio.png" alt="Logo de la empresa"></a>
+        <nav id="barraDeNavegacion" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/publicaciones.html">Publicaciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <nav id="barraDeNavegacion">
-        <div class="caja"><a href="../index.html" target="_blank">Inicio</a></div>
-        <div class="caja"><a href="#">Servicios</a></div>
-        <div class="caja"><a href="./nosotros.html" target="_blank">Nosotros</a></div>
-        <div class="caja"><a href="./contacto.html" target="_blank">Contacto</a></div>
-        <div class="caja"><a href="./publicaciones.html" target="_blank">Publicaciones</a></div>
-    </nav>
+    <main>
+        <div class="bannerServicios"><img src="../images/Servicios.png" alt="logo_servicios"></div>
 
-    <img src="../images/Servicios.png" alt="logo_servicios" width="100%" height="225px">
-    <h1>Servicios prestados por Sanchez & Asoc SRL</h1>
-    <br>
-    <nav>
-        <h2 id="Audit">AUDITORIA Y ASEGURAMIENTO</h2>
-        <p>Cumplir sus expectativas es nuestro inicio/comienzo. De la mano de los profesionales de todas nuestras firmas
-            miembro, brindamos una variedad de habilidades y conocimientos conectados, basados en nuestros años de
-            experiencia nos esforzamos en brindarle un impacto más allá de lo esperado.</p>
-        <br>
-        <h3>¿En qué consiste una Auditoria?</h3>
-        <p>Una auditoría es una revisión de los procedimientos que se llevan en una empresa a nivel contable o laboral
-            entre otros, para comprobar que se reúne una serie de requisitos establecidos. Puede ser interna o externa,
-            en función de si la realiza la propia empresa, o una entidad externa a la misma.
+        <div class="principal">
 
-            El objetivo principal de la auditoría no es detectar fraudes, aunque se suele pensar que es así, sino
-            revisar los protocolos que se utilizan en la empresa para encontrar posibles errores e implantar las mejoras
-            que correspondan. No obstante, puede ocurrir que durante la auditoría se descubra alguna irregularidad
-            legal.</p>
-        <br>
-        <h2 id="consult">CONSULTORIA</h2>
-        <p>Si estás listo para innovar y transformar tu negocio, Sanchez & Asoc puede ayudarte a imaginar, entregar y
-            ejecutar su futuro sin importar su industria con las últimas tecnologías, desde el desarrollo de la
-            estrategia hasta la implementación.</p>
-        <br>
-        <h3>¿En qué consiste una Consultoria?</h3>
-        <p>La consultoría es un servicio especializado que tiene como objetivo orientar a una empresa que está
-            atravesando algún tipo de problema específico y que no consigue solucionarlo por sus propios medios.
+            <div class="cajaServicios">
+                <h1>Servicios prestados por Sanchez & Asoc SRL</h1>
+            </div>
 
-            Por este motivo, es que normalmente se trata de un profesional externo.
+            <div class="caja">
+                <h2 id="Audit">AUDITORIA Y ASEGURAMIENTO</h2>
+                <p>Cumplir sus expectativas es nuestro inicio/comienzo. De la mano de los profesionales de todas
+                    nuestras
+                    firmas
+                    miembro, brindamos una variedad de habilidades y conocimientos conectados, basados en nuestros años
+                    de
+                    experiencia nos esforzamos en brindarle un impacto más allá de lo esperado.</p>
 
-            El objetivo de una consultoría — tanto pública como privada—, es brindarle a las empresas fundamentos
-            administrativos para el desarrollo de sus actividades, metodologías de trabajo y herramientas para que
-            puedan ejecutar procesos de forma eficiente a través del acompañamiento profesional especializado del
-            consultor.</p>
-        <br>
-        <h2 id="imp">IMPUESTOS</h2>
-        <p>El enfoque por industrias de nuestros equipos nos permite acercar el expertise más relevante para las
-            necesidades particulares de nuestros clientes, abordando las cuestiones específicas que enfrenta cada sector
-            de la industria.</p>
-            <br>
-            <h3>¿Qué son los impuestos?</h3>
-            <p>Los impuestos son tributos o cargas que los ciudadanos están obligados a pagar como consecuencia de determinados hechos, actos o negocios sin que exista una contraprestación directa por su pago. Son necesarios para sostener el Estado del biniestar. Dado que suponen un gasto para empresas y familias, la planificación fiscal es fundamental para mantener una buena salud financiera, tanto en el ámbito personal como empresarial, y poder hacer frente a su pago.</p>
-    </nav>
-    <br>
+                <h3>¿En qué consiste una Auditoria?</h3>
+                <p>Una auditoría es una revisión de los procedimientos que se llevan en una empresa a nivel contable o
+                    laboral
+                    entre otros, para comprobar que se reúne una serie de requisitos establecidos. Puede ser interna o
+                    externa,
+                    en función de si la realiza la propia empresa, o una entidad externa a la misma.
 
+                    El objetivo principal de la auditoría no es detectar fraudes, aunque se suele pensar que es así,
+                    sino
+                    revisar los protocolos que se utilizan en la empresa para encontrar posibles errores e implantar las
+                    mejoras
+                    que correspondan. No obstante, puede ocurrir que durante la auditoría se descubra alguna
+                    irregularidad
+                    legal.</p>
+
+            </div>
+
+            <div class="caja">
+                <h2 id="consult">CONSULTORIA</h2>
+                <p>Si estás listo para innovar y transformar tu negocio, Sanchez & Asoc puede ayudarte a imaginar,
+                    entregar
+                    y
+                    ejecutar su futuro sin importar su industria con las últimas tecnologías, desde el desarrollo de la
+                    estrategia hasta la implementación.</p>
+                <h3>¿En qué consiste una Consultoria?</h3>
+                <p>La consultoría es un servicio especializado que tiene como objetivo orientar a una empresa que está
+                    atravesando algún tipo de problema específico y que no consigue solucionarlo por sus propios medios.
+
+                    Por este motivo, es que normalmente se trata de un profesional externo.
+
+                    El objetivo de una consultoría — tanto pública como privada—, es brindarle a las empresas
+                    fundamentos
+                    administrativos para el desarrollo de sus actividades, metodologías de trabajo y herramientas para
+                    que
+                    puedan ejecutar procesos de forma eficiente a través del acompañamiento profesional especializado
+                    del
+                    consultor.</p>
+            
+            </div>
+
+            <div class="caja">
+                <h2 id="imp">IMPUESTOS</h2>
+                <p>El enfoque por industrias de nuestros equipos nos permite acercar el expertise más relevante para
+                    las
+                    necesidades particulares de nuestros clientes, abordando las cuestiones específicas que enfrenta
+                    cada
+                    sector
+                    de la industria.</p>
+                <h3>¿Qué son los impuestos?</h3>
+                <p>Los impuestos son tributos o cargas que los ciudadanos están obligados a pagar como consecuencia
+                    de
+                    determinados hechos, actos o negocios sin que exista una contraprestación directa por su pago.
+                    Son
+                    necesarios para sostener el Estado del biniestar. Dado que suponen un gasto para empresas y
+                    familias, la
+                    planificación fiscal es fundamental para mantener una buena salud financiera, tanto en el ámbito
+                    personal
+                    como empresarial, y poder hacer frente a su pago.</p>
+            </div>
+        </div>
+    </main>
     <footer id="pieDePagina">
         <div class="cajaFooter1">
             <h2>Seguinos en nuestras redes sociales</h2>
@@ -94,7 +153,9 @@
         <div class="botonWhatsapp"><a href="https://web.whatsapp.com/" target="_blank"><img src="../images/Whatsapp.png"
                     alt="logo_whap" width="40px" height="40px"></a></div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

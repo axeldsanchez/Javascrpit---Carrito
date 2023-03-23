@@ -1,0 +1,33 @@
+/*Body*/
+body {
+    background-color: rgba(218, 228, 236, 0.989);
+    color: rgb(47, 12, 129);
+}
+
+.cuerpo {
+    h1 {
+        font-weight: 700;
+    }
+
+    h2 {
+        font-weight: 600;
+    }
+
+    h3{
+        font-weight: 600;
+    }
+}
+
+
+p a {
+    text-decoration: none;
+    color: $color-principal;
+
+    &:hover {
+        color: $color-hover;
+    }
+
+    &:active {
+        color: $color-active;
+    }
+}

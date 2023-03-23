@@ -1,0 +1,90 @@
+/*GRID*/
+.publicacionesGrid {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "not1 not2 not2 not4"
+        "not1 not3 not3 not4";
+    grid-template-columns: 300px auto auto 300px;
+    grid-template-rows: 50% 50%;
+    gap: 1.6em;
+
+    .articulo {
+        color: black;
+        text-decoration: underline;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .publicacionesGridsBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .publicacionesGrid1 {
+        grid-area: not1;
+        background-color: rgb(179, 225, 253);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        border-radius: 20px;
+
+        div {
+            padding-bottom: 15px;
+        }
+    }
+
+    .publicacionesGrid2 {
+        grid-area: not2;
+        background-color: rgb(179, 225, 253);
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        border-radius: 20px;
+
+        div {
+            padding-bottom: 5px;
+        }
+    }
+
+    .publicacionesGrid3 {
+        grid-area: not3;
+        background-color: rgb(179, 225, 253);
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        border-radius: 20px;
+
+        div {
+            padding-bottom: 5px;
+        }
+    }
+
+    .publicacionesGrid4 {
+        grid-area: not4;
+        background-color: rgb(179, 225, 253);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        border-radius: 20px;
+
+        div {
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.cuerpoPublicacion {
+    background-color: white;
+}

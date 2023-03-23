@@ -9,30 +9,38 @@ header {
     position: fixed;
     border-bottom: 2px solid #53b8e7;
     box-shadow: 2px 2px 30px rgb(100, 206, 228);
-}
 
-header #logo {
-    display: flex;
-    text-align: center;
-    height: 76px;
-}
+    #logo {
+        display: flex;
+        text-align: center;
+        height: 76px;
+    }
 
-#barraDeNavegacion {
-    background-color: white !important;
-}
+    #barraDeNavegacion {
+        background-color: white !important;
 
-#barraDeNavegacion li {
-    padding: 0px 20px;
-}
+        li {
+            padding: 0px 20px;
 
-#barraDeNavegacion a {
-    text-decoration: none;
-    color: rgb(47, 12, 129);
-    ;
-    font-size: 20px;
-    font-weight: bold;
-}
+            &:hover {
+                border-bottom: 3.5px solid rgb(69, 108, 144);
+            }
 
-#barraDeNavegacion li:hover {
-    border-bottom: 3.5px solid rgb(69, 108, 144);
+            a {
+                text-decoration: none;
+                color: $color-principal;
+                font-size: 20px;
+                font-weight: bold;
+
+                &:hover {
+                    color: $color-hover;
+                }
+
+                &:active {
+                    color: $color-active;
+                }
+            }
+
+        }
+    }
 }

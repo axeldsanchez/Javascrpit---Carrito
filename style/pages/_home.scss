@@ -1,0 +1,29 @@
+/*home*/
+.principal {
+    min-height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .caja {
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+
+        .cajaHome p {
+            padding: 5px;
+        }
+    }
+}
+
+/*banner*/
+.bannerHome {
+    margin-top: 75px;
+
+    img {
+        width: 100%;
+        height: 300px;
+    }
+}
