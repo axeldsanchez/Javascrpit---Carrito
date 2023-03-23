@@ -1,0 +1,24 @@
+#contacto {
+    padding-top: 100px;
+
+    h1 {
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .cajaContacto {
+        display: flex;
+        flex-direction: column;
+
+        .botonContacto{
+            padding-bottom: 20px;
+        }
+
+        input {
+            max-width: 40%;
+        }
+    }
+}

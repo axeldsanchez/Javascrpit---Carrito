@@ -7,83 +7,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="../images/Estudio contable Sanchez y Asoc.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Contacto</title>
 </head>
 
 <body>
 
-    <nav id="barraDeNavegacion">
-        <div class="caja"><a href="../index.html" target="_blank">Inicio</a></div>
-        <div class="caja"><a href="./servicios.html" target="_blank">Servicios</a></div>
-        <div class="caja"><a href="./nosotros.html" target="_blank">Nosotros</a></div>
-        <div class="caja"><a href="#">Contacto</a></div>
-        <div class="caja"><a href="./publicaciones.html" target="_blank">Publicaciones</a></div>
-    </nav>
+    <header>
+        <a id="logo" href="../index.html"><img src="../images/LogoEstudio.png" alt="Logo de la empresa"></a>
+        <nav id="barraDeNavegacion" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/publicaciones.html">Publicaciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div id="contacto">
         <h1>Contactate con nosotros</h1>
-        <p>Muchas gracias por tu interés. Si tenés preguntas sobre nuestra compañía o servicios, por favor, completá el siguiente formulario:</p>
+        <p>Muchas gracias por tu interés. Si tenés preguntas sobre nuestra compañía o servicios, por favor, completá el
+            siguiente formulario:</p>
+
+        <form class="cajaContacto">
+            <fieldset class="cajaContacto">
+                <legend>Datos del contacto</legend>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" required>
+
+                <label for="tel">Numero de telefono</label>
+                <input type="tel" id="tel" required>
+
+                <label for="mail">Correo electronico</label>
+                <input type="email" id="mail" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Servicio solicitado</legend>
+                <select name="service" id="service">
+                    <option value="auditoria">AUDITORIA</option>
+                    <option value="consultoria">CONSULTORIA</option>
+                    <option value="impuestos">IMPUESTOS</option>
+                </select>
+
+                <p>Cliente habitual del Estudio:</p>
+                <label for="si">SI</label>
+                <input type="radio" name="cliente" value="si" id="si">
+
+                <label for="no">NO</label>
+                <input type="radio" name="cliente" value="no" id="no">
+
+                <div class="cajaContacto">
+                    <p>Politica de privacidad:</p>
+                    <div>
+                        <label for="politica">He leído y acepto la política de privacidad</label>
+                        <input type="checkbox" name="politica" id="politica">
+                    </div>
+                    <div>
+                        <label for="comentario">Deje su comentario</label>
+                        <textarea name="comentario" id="comentario" cols="40" rows="3"></textarea>
+                    </div>
+                    <div class="botonContacto">
+                        <input type="submit" class="btn btn-dark" value="Enviar">
+                        <input type="reset" class="btn btn-dark" value="Limpiar">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </div>
-    <br>
 
-    <form>
-        <fieldset>
-            <legend>Datos del contacto</legend>
-            <br>
-            <label for="name">Nombre</label>
-            <input type="text" id="name" required>
-            <br><br>
-
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" required>
-            <br><br>
-
-            <label for="tel">Numero de telefono</label>
-            <input type="tel" id="tel" required>
-            <br><br>
-
-            <label for="mail">Correo electronico</label>
-            <input type="email" id="mail" required>
-            <br><br>
-        </fieldset>
-        <br><br>
-
-        <fieldset>
-            <legend>Servicio solicitado</legend>
-            <br>
-            <select name="service" id="service">
-                <option value="auditoria">AUDITORIA</option>
-                <option value="consultoria">CONSULTORIA</option>
-                <option value="impuestos">IMPUESTOS</option>
-            </select>
-            <br><br>
-
-            <p>Cliente habitual del Estudio:</p>
-            <label for="si">SI</label>
-            <input type="radio" name="cliente" value="si" id="si">
-
-            <label for="no">NO</label>
-            <input type="radio" name="cliente" value="no" id="no">
-            <br><br>
-
-            <p>Politica de privacidad:</p>
-
-            <label for="politica">He leído y acepto la política de privacidad</label>
-            <input type="checkbox" name="politica" id="politica">
-
-            <br><br>
-
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar">
-            <br><br>
-
-            <label for="comentario">Deje su comentario</label>
-            <textarea name="comentario" id="comentario" cols="40" rows="3"></textarea>
-        </fieldset>
-
-
-    </form>
-    <br>
     <footer id="pieDePagina">
         <div class="cajaFooter1">
             <h2>Seguinos en nuestras redes sociales</h2>
@@ -113,6 +131,9 @@
                     alt="logo_whap" width="40px" height="40px"></a></div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

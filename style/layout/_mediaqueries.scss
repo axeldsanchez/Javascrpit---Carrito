@@ -29,7 +29,8 @@
 @media screen and (max-width: 376px) {
 
     .publicacionesGrid {
-        margin-top: 75px;
+        margin-top: 100px;
+        margin-bottom: 20px;
         display: grid;
         grid-template-areas:
             "not1"
@@ -114,12 +115,27 @@
     }
 
     .nosotros {
-        @extend .principal;
+        p {
+            font-size: 12px;
+            padding: 0px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
     }
 
     #mapa {
         iframe {
-            width: 80%;
+            width: 50%;
         }
     }
 
