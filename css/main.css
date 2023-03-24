@@ -108,6 +108,7 @@ p a:active {
   align-items: center;
   padding: 0 15px;
   border-radius: 20px;
+  border: 2px #53b8e7 solid;
 }
 .publicacionesGrid .publicacionesGrid1 div {
   padding-bottom: 15px;
@@ -119,6 +120,7 @@ p a:active {
   flex-direction: column;
   padding: 0 15px;
   border-radius: 20px;
+  border: 2px #53b8e7 solid;
 }
 .publicacionesGrid .publicacionesGrid2 div {
   padding-bottom: 5px;
@@ -130,6 +132,7 @@ p a:active {
   flex-direction: column;
   padding: 0 15px;
   border-radius: 20px;
+  border: 2px #53b8e7 solid;
 }
 .publicacionesGrid .publicacionesGrid3 div {
   padding-bottom: 5px;
@@ -143,6 +146,7 @@ p a:active {
   align-items: center;
   padding: 0 15px;
   border-radius: 20px;
+  border: 2px #53b8e7 solid;
 }
 .publicacionesGrid .publicacionesGrid4 div {
   padding-bottom: 15px;
@@ -240,8 +244,11 @@ p a:active {
   padding-bottom: 10px;
 }
 
-#mapa {
+#mapaContenedor {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nosotros {
@@ -292,6 +299,9 @@ p a:active {
   }
   .publicacionesGrid img {
     height: 170px;
+  }
+  #mapaContenedor .mapa {
+    width: 70%;
   }
 }
 @media screen and (max-width: 376px) {
@@ -366,7 +376,7 @@ p a:active {
   .nosotros h3 {
     font-size: 16px;
   }
-  #mapa iframe {
-    width: 50%;
-  }
+}
+#mapaContenedor .mapa {
+  width: 80%;
 }/*# sourceMappingURL=main.css.map */
