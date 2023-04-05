@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     position: fixed;
     border-bottom: 2px solid #53b8e7;
-    box-shadow: 2px 2px 30px rgb(100, 206, 228);
+    box-shadow: 2px 2px 30px $color-sobra;
 
     #logo {
         display: flex;

@@ -27,7 +27,8 @@
 
     #mapaContenedor {
         .mapa {
-            width: 70%;
+            height: 200px;
+            width: 250px;
         }
     }
 }
@@ -47,7 +48,8 @@
         grid-template-rows: 290px 290px 290px 290px;
 
         img {
-            height: 150px;
+            height: 130px;
+            width: 160px;
         }
 
         h2 {
@@ -138,10 +140,11 @@
             font-size: 16px;
         }
     }
-}
-    #mapaContenedor {
-        .mapa {
-            width: 80%;
-        }
+
+    #contacto {
+
+        padding-left: 20px;
+
+    }
 
 }
