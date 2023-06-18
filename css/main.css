@@ -270,25 +270,50 @@ p a:active {
   max-width: 75%;
 }
 
-#contacto {
-  padding-top: 100px;
-  padding-left: 100px;
+#librosOfrecidos {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+  justify-items: center;
+  gap: 3em;
 }
-#contacto h1 {
-  font-weight: 700;
+
+.libro {
+  background-color: rgb(179, 225, 253);
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: 2px #53b8e7 solid;
+  box-shadow: 0px 15px 25px rgb(100, 206, 228);
 }
-#contacto p {
-  font-size: 10px;
-}
-#contacto .cajaContacto {
+
+.contenedorLibros {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
-#contacto .cajaContacto .botonContacto {
-  padding-bottom: 20px;
+.contenedorLibros img {
+  width: 200px;
+  height: 220px;
 }
-#contacto .cajaContacto input {
-  max-width: 40%;
+.contenedorLibros p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.contenedorLibros .precio {
+  font-size: 20px;
+}
+
+#botonC {
+  margin-top: 90px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
 }
 
 /*Media queries*/

@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../images/Estudio contable Sanchez y Asoc.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/LogoEstudio.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Contacto</title>
+    <title>Libros</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                             <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#">Libros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/publicaciones.html">Publicaciones</a>
@@ -47,60 +47,40 @@
         </nav>
     </header>
 
-    <div id="contacto">
-        <h1>Contactate con nosotros</h1>
-        <p>Muchas gracias por tu interés. Si tenés preguntas sobre nuestra compañía o servicios, por favor, completá el
-            siguiente formulario:</p>
 
-        <form class="cajaContacto">
-            <fieldset class="cajaContacto">
-                <legend>Datos del contacto</legend>
-                <label for="name">Nombre</label>
-                <input type="text" id="name" required>
-
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" required>
-
-                <label for="tel">Numero de telefono</label>
-                <input type="tel" id="tel" required>
-
-                <label for="mail">Correo electronico</label>
-                <input type="email" id="mail" required>
-            </fieldset>
-
-            <fieldset>
-                <legend>Servicio solicitado</legend>
-                <select name="service" id="service">
-                    <option value="auditoria">AUDITORIA</option>
-                    <option value="consultoria">CONSULTORIA</option>
-                    <option value="impuestos">IMPUESTOS</option>
-                </select>
-
-                <p>Cliente habitual del Estudio:</p>
-                <label for="si">SI</label>
-                <input type="radio" name="cliente" value="si" id="si">
-
-                <label for="no">NO</label>
-                <input type="radio" name="cliente" value="no" id="no">
-
-                <div class="cajaContacto">
-                    <p>Politica de privacidad:</p>
-                    <div>
-                        <label for="politica">He leído y acepto la política de privacidad</label>
-                        <input type="checkbox" name="politica" id="politica">
-                    </div>
-                    <div>
-                        <label for="comentario">Deje su comentario</label>
-                        <textarea name="comentario" id="comentario" cols="35" rows="3"></textarea>
-                    </div>
-                    <div class="botonContacto">
-                        <input type="submit" class="btn btn-primary" value="Enviar">
-                        <input type="reset" class="btn btn-primary" value="Limpiar">
-                    </div>
-                </div>
-            </fieldset>
-        </form>
+    <div id="botonC">
+        <button id="botonCarrito" type="button" class="btn btn-primary d-grid gap-2 d-md-flex justify-content-md-end"
+            data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Carrito
+        </button>
     </div>
+
+    <div class="modal fade" id="exampleModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="">Carrito de Compras de Libros</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="compradelCarrito" class="modal-body">
+                </div>
+                <div class="modal-header">
+                    <span><b>Total:</b></span>
+                    <h6 class="modal-title" id="precioTotal"></h6>
+                </div>
+                <div class="modal-footer">
+                    <button id="cerrarCarrito" type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <main>
+        <section id="librosOfrecidos"></section>
+    </main>
 
     <footer id="pieDePagina">
         <div class="cajaFooter1">
@@ -134,6 +114,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <script src="../JS/arreglo.js"></script>
+    <script src="../JS/carrito.js"></script>
 </body>
 
 </html>
