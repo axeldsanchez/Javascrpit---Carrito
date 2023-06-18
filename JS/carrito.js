@@ -55,7 +55,7 @@ function agregaralcarrito(id) {
         document.getElementById(`cantidad${agregar.id}`).innerHTML = `<p id=cantidad${agregar.id}> ${agregar.cantidad}</p>`
 
         actualizarPrecioTotal()
-    
+
     } else {
         let agregarLibro = libros.find(element => element.id == id);
         carrito.push(agregarLibro);
@@ -71,7 +71,7 @@ function agregaralcarrito(id) {
         Cantidad: <span id=cantidad${agregarLibro.id}>${agregarLibro.cantidad}</span>
         </div>
         <p class="precio">precio por unidad: ${agregarLibro.precio}</p>
-        <button id="eliminar${agregarLibro.id}" class="btn btn-primary">eliminar</button>
+        <button id="eliminar${agregarLibro.id}" class="btn btn-primary">Eliminar</button>
         </div>
         `
         compradelCarrito.appendChild(librosComprados);
@@ -89,7 +89,7 @@ function agregaralcarrito(id) {
     }
 
     localStorage.setItem("ComprasCarritoLibros", JSON.stringify(carrito))
-    
+
 }
 
 /* Declaracion funcion actualizarPrecioTotal */
@@ -102,7 +102,11 @@ function traerStorage() {
 
     if (Storage) {
         Storage.forEach(item => {
-            agregaralcarrito(item.id)
+
+            for (let i = 0; i < item.cantidad; i++) {
+
+                agregaralcarrito(item.id)
+            }
 
         });
     }
