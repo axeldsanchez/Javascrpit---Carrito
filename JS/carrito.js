@@ -10,7 +10,12 @@ const cerrarCarrito = document.getElementById("cerrarCarrito");
 let carrito = [];
 
 /* Ejecucion de la funcion mostrarLibros */
-mostrarLibos(libros);
+fetch("./data.json")
+    .then((response) => response.json())
+    .then((data) => mostrarLibos(data))
+
+/* mostrarLibos(libros); */
+
 
 
 /* Declaracion de la funcion mostrarLibros */
