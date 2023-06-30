@@ -11,8 +11,8 @@ let carrito = [];
 
 /* Ejecucion de la funcion mostrarLibros */
 fetch("./data.json")
-    .then((response) => response.json())
-    .then((data) => mostrarLibos(data))
+    .then(response => response.json())
+    .then(data => mostrarLibos(data))
 
 /* mostrarLibos(libros); */
 
